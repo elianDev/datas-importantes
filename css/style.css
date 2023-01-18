@@ -97,7 +97,7 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-.data.active {
+.data {
   min-height: 200px;
   display: grid;
   grid-template-columns: auto auto;
@@ -125,7 +125,7 @@ input[type="text"] {
   display: none;
 }
 
-.data-data.active {
+.data-data {
   display: initial;
   grid-column: 1/-1;
 }
@@ -139,7 +139,7 @@ input[type="text"] {
   display: none;
 }
 
-.data-time-remove.active {
+.data-time-remove {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
