@@ -33,19 +33,23 @@ a {
 }
 
 .formulario {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
   padding: 1.5rem;
   box-sizing: border-box;
-  max-height: 100px;
+  min-height: 100px;
   border: 4px solid #446464;
   border-radius: 4px;
 }
 
-.form {
+.formulario-data,
+.formulario-titulo {
   display: flex;
   align-items: center;
 }
 
-.form label {
+.formulario label {
   display: inline-block;
   color: #ffffff;
   font-weight: 700;
@@ -53,7 +57,7 @@ a {
   margin-right: 0.75rem;
 }
 
-.form .btn {
+.formulario .btn {
   width: 140px;
   height: 45px;
   background: #33783a;
@@ -62,6 +66,13 @@ a {
   border: none;
   text-transform: uppercase;
   font-size: 1rem;
+  transition: 0.2s;
+}
+
+.formulario .btn:hover {
+  cursor: pointer;
+  background: #56e976;
+  color: #33783a;
 }
 
 input[type="date"],
@@ -70,32 +81,24 @@ input[type="text"] {
   height: 24px;
   background: rgba(238, 238, 238, 0.5);
   border-radius: 4px;
-  margin-right: 2.5rem;
 }
 
 input[type="text"] {
   width: 200px;
-  margin-right: 4rem;
 }
 
 @media (max-width: 800px) {
   .header h1 {
     font-size: 2rem;
   }
-  input[type="date"],
-  input[type="text"] {
-    border-radius: 4px;
-    margin-right: 1rem;
+  .formulario {
+    grid-template-columns: auto auto;
+    gap: 1rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .formulario {
-    max-width: max-content;
-    max-height: max-content;
-  }
-  .form {
-    display: grid;
-    gap: 12px;
+    grid-template-columns: 1fr;
   }
 }
