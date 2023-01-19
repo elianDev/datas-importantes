@@ -33,9 +33,9 @@ a {
 }
 
 .formulario {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 1.5rem;
   box-sizing: border-box;
   height: 100%;
@@ -86,7 +86,7 @@ input[type="text"] {
 }
 
 input[type="text"] {
-  width: 200px;
+  max-width: 200px;
 }
 
 .data {
