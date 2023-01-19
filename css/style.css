@@ -90,12 +90,12 @@ input[type="text"] {
 }
 
 .data {
-  max-height: max-content;
   background: #2a233c;
   border-radius: 4px;
   padding: 1.5rem;
   box-sizing: border-box;
   height: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .data-header {
